@@ -1,0 +1,122 @@
+.homes-container {
+  width: 100%;
+  font-family: "Oswald, sans-serif";
+}
+
+.page-pagination-container {
+  width: 40%;
+  text-align: center;
+  margin: 1 auto;
+  @media screen and (max-width: 375px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 1rem auto;
+  }
+  @media screen and (max-width: 736px) {
+    width: 80%;
+    margin: 1rem;
+  }
+  @media screen and (max-width: 991px) {
+    width: 55%;
+    margin: 1rem 7rem;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 65%;
+    margin: 1rem auto;
+  }
+  @media screen and (max-width: 1800px) {
+    width: 65%;
+    margin: 1rem 10rem;
+  }
+}
+
+.page-pagination {
+  list-style: none;
+  background-color: $color2;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.6);
+  margin: 0 auto;
+
+  li {
+    display: inline-block;
+    padding: 1rem;
+    cursor: pointer;
+    @media screen and (max-width: 375px) {
+      font-size: 0.9rem;
+    }
+    color: $color-white;
+    &:hover {
+      background-color: $color4;
+    }
+  }
+}
+
+.homes-filter-container {
+  margin: 0 auto;
+}
+
+.homes-filter {
+  padding: 1rem;
+  height: auto;
+  font-family: "Oswald, sans-serif";
+  text-align: center;
+
+  &__input {
+    padding: 1rem;
+    width: 60%;
+    font-size: 1.2rem;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    @media screen and (max-width: 736px) {
+      width: 80%;
+    }
+  }
+}
+
+.home-card {
+  width: 80%;
+  margin-top: 2rem;
+  transition: transform 0.4s;
+  background-color: #eee;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.6);
+  font-family: "Oswald, sans-serif";
+
+  &__img {
+    max-width: 100%;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #101d2c;
+  }
+  &__price {
+    color: #101d2c;
+    font-weight: 600;
+  }
+  &__amenities {
+    flex: 0 0 50%;
+    font-weight: 600;
+  }
+  &__rooms {
+    flex: 1;
+    font-weight: 600;
+  }
+}
+
+.home-card-info {
+  display: flex;
+  @media screen and (max-width: 375px) {
+    display: block;
+  }
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}

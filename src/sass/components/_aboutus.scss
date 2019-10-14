@@ -1,0 +1,95 @@
+.aboutus-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  font-family: "Oswald, sans-serif";
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+  @media screen and (max-width: 736px) {
+    display: block;
+  }
+  @media screen and (max-width: 991px) {
+    display: inline-block;
+  }
+  @media screen and (max-width: 1200px) {
+    display: inline-block;
+  }
+}
+
+.aboutus-section {
+  background-color: $color5;
+  flex: 0 0 40%;
+  height: auto;
+
+  &__image {
+    width: 100%;
+    vertical-align: bottom;
+  }
+}
+
+.aboutus-section__image {
+  max-width: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutus-text-container {
+  background-color: $color2;
+  flex: 1;
+  height: auto;
+}
+.aboutus-text {
+  &__heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: $color-white;
+    @media screen and (max-width: 480px) {
+      margin: 0;
+      padding: 0.5rem;
+    }
+    @media screen and (max-width: 736px) {
+      margin: 0;
+      padding: 0.5rem;
+    }
+    @media screen and (max-width: 991px) {
+      margin: 0;
+      padding: 0.5rem;
+    }
+    @media screen and (max-width: 1200px) {
+      margin: 0;
+      padding: 0.5rem;
+    }
+    @media screen and (max-width: 1800px) {
+      margin: 0;
+      padding: 1.5rem;
+    }
+  }
+  &__content {
+    padding: 0 1.3rem;
+    @media screen and (max-width: 480px) {
+      padding: 0.5rem 1rem;
+    }
+    @media screen and (max-width: 736px) {
+      padding: 0.5rem 1rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 0.5rem 1rem;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 0.5rem 1rem;
+  }
+  @media screen and (max-width: 1800px) {
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.contact-icons {
+  padding-right: 0.5rem;
+  color: $color-white;
+}

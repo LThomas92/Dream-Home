@@ -1,0 +1,160 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Oswald, sans-serif";
+}
+
+.landing-page-header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color4, 0.5),
+      rgba($color5, 0.5)
+    ),
+    url("https://i.imgur.com/jAyjrOR.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color4, 0.5),
+        rgba($color5, 0.5)
+      ),
+      url("https://i.imgur.com/jAyjrOR.jpg");
+  }
+
+  &__box {
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    @media screen and (max-width: 375px) {
+      top: 20%;
+      right: 18%;
+    }
+    @media screen and (max-width: 411px) {
+      right: 22%;
+    }
+    @media screen and (max-width: 480px) {
+      top: 20%;
+      left: 13%;
+    }
+    @media screen and (max-width: 736px) {
+      top: 30%;
+      left: 13%;
+    }
+    @media screen and (max-width: 991px) {
+      right: 17%;
+    }
+    @media screen and (max-width: 1200px) {
+      left: 25%;
+    }
+  }
+
+  &__title {
+    font-size: 5.5rem;
+    letter-spacing: 0.4rem;
+    color: $color-white;
+    margin: 0;
+    @media screen and (max-width: 375px) {
+      font-size: 3rem;
+    }
+    @media screen and (max-width: 411px) {
+      font-size: 3.5rem;
+    }
+
+    &__small {
+      color: whitesmoke;
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: lowercase;
+      @media screen and (max-width: 375px) {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
+
+.features-container {
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+  font-family: "Oswald, sans-serif";
+  &__title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1.5rem;
+    margin: 0;
+  }
+}
+
+.svc-logo {
+  font-size: 3rem;
+  color: $color5;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  @media screen and (max-width: 375px) {
+    display: block;
+  }
+  @media screen and (max-width: 411px) {
+    display: block;
+  }
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 0 auto;
+}
+
+.features-content {
+  font-family: "Georgia, sans-serif";
+  padding: 0 1.5rem;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+}
+
+.reviews-container {
+  width: 100%;
+  height: auto;
+  background-color: $color4;
+  text-align: center;
+}
+
+.reviews-section {
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+  padding-bottom: 1rem;
+  &__title {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin: 0;
+  }
+}
+
+.review-star {
+  font-size: 1.5rem;
+  color: gold;
+  padding: 0.5rem;
+}

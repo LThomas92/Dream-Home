@@ -1,0 +1,104 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  background-color: $color1;
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  @media screen and (max-width: 375px) {
+    display: block;
+  }
+  @media screen and (max-width: 411px) {
+    display: block;
+  }
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+.footer {
+  flex: 0 0 60%;
+  background-color: $color5;
+  &__icon {
+    margin: 0 auto;
+    &__image {
+      height: 8rem;
+      @media screen and (max-width: 375px) {
+        height: 4rem;
+      }
+    }
+  }
+  &__content {
+    list-style: none;
+    @media screen and (max-width: 375px) {
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (max-width: 411px) {
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (max-width: 480px) {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__text {
+      display: inline-block;
+      font-size: 1.3rem;
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+      cursor: pointer;
+      @media screen and (max-width: 375px) {
+        margin: 0;
+        padding-right: 0.5rem;
+      }
+      @media screen and (max-width: 411px) {
+        padding: 0.5rem;
+      }
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.footer-text-link {
+  color: $color-black;
+}
+
+.sm-links {
+  font-size: 3.5rem;
+  color: $color2;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.footer-sm-icons-box {
+  flex: 1;
+  text-align: center;
+  p {
+    @media screen and (max-width: 375px) {
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (max-width: 430px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__list {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+      @media screen and (max-width: 375px) {
+        margin-right: 1.2rem;
+      }
+    }
+  }
+}
