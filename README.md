@@ -1,3 +1,5 @@
+##DREAM HOME
+
 Dream-Home is a real estate application that was built solely with only React and using local component state in React. SASS is used for styling and is responsive as well.
 
 Application Features: 
